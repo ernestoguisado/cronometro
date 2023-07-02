@@ -1,11 +1,19 @@
-<p>Cronometro facherito</p>
+<body>
 
-<div>
-<button (click)="start()">Iniciar</button>
-<button (click)="stop()">Pause</button>
-<button (click)="restart()">Reiniciar</button>
-</div>
 
-<div class="Segundero">
-    <p>{{segundos}}</p>
-</div>
+
+    <div class="container">
+        <div class="parrafito">
+            <p>Cronometro facherito :) </p>
+        </div>
+        <div class="container container__buttons">
+            <button (click)="start()" class="button button-start">Iniciar</button>
+            <button (click)="stop()" class="button button-stop">Pause</button>
+            <button (click)="restart()" class="button button-restart">Reiniciar</button>
+        </div>
+
+        <div class="container container__segundero">
+            <p>{{segundos}}</p>
+        </div>
+    </div>
+</body>
